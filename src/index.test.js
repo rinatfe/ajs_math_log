@@ -57,6 +57,18 @@ test('test', () => {
   test('test', () => {
     const magic = new Magican(100);
     magic.setAttack = 6;
+    expect(magic.getAttack).toBe(50);
+  });
+
+  test('test', () => {
+    const magic = new Magican(100);
+    magic.setAttack = 11;
+    expect(magic.getAttack).toBe(0);
+  });
+
+  test('test', () => {
+    const magic = new Magican(100);
+    magic.setAttack = 12;
     expect(magic.getAttack).toBe(0);
   });
 
